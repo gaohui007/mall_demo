@@ -30,6 +30,10 @@ export default {
         backClick() {
             this.$router.back()
             //两种方法，this.$router.go(-1),也可以返回
+        },
+        titleClick(index) {
+            this.currentIndex = index
+            this.$emit('titleClick',index)
         }
     },
     components:{
